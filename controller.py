@@ -1,3 +1,7 @@
+#Developed by Morbid
+
+# tetik verdikten sonra usomdaki bütün domainleri 5 dakikada bir kontrol eder ve sizin domaininiz yakalanmış ise size 3 saniyede bir spam olarak mesaj gönderir
+
 import discord
 import requests
 import asyncio
@@ -7,7 +11,7 @@ from discord.ext import commands, tasks
 TOKEN = "token" # bot tokeninizi girin buraya 
 CHANNEL_ID = 1 #kontrolün olacağı kanalın id si
 USOM_URL = "https://www.usom.gov.tr/adres"
-CHECK_INTERVAL = 5  
+CHECK_INTERVAL = 300  
 
 target_domains = {"terorlemucadele.net"}  
 alert_active = False  
